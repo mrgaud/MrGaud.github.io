@@ -10,3 +10,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', end
   -o-background-size: cover;
   background-size: cover;
 }
+p{
+	font-size: 1.5em;
+	border-radius: 0px 0px 5px 5px;
+	background-color:beige;
+	padding:1em;
+}
