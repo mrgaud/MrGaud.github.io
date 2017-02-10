@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  text-shadow: 1px 1px 1px #000;
+}
+body{
+  background-color: rgb(110, 110, 110);
+  background-image: url(https://static.pexels.com/photos/34676/pexels-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+ul{
+  list-style: none;
+}
+.navContainer{
+  background-color:rgba(75, 75, 75, 0.6);;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 2em;
+  border-bottom-left-radius:.5em;
+  border-bottom-right-radius:.5em;
+}
+.nav{
+  font-size: 1.3em;
+  padding: 0;
+  margin-top:.1em;
+  color: white;
+  font-family: open sans;
+  cursor: pointer;
+  border-bottom:0px solid white;
+  -webkit-transition: border .2s;
+}
+.nav:hover{
+  color: #D8D8D8;
+  border-bottom:.2em solid white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .3s;
+}
+.smallNavContainer{
+  font-size: 2em;
+  position: fixed;
+  top: .5em;
+  left: .5em;
+  color: white;
+  display: none;
+}
+.ddNavContainer{
+  display: none;
+  width: 70%;
+  left:15%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  position: fixed;
+  background-color:rgba(75, 75, 75, 0.4);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
+  border-bottom: .12em solid rgba(75, 75, 75, 0.4);
+  border-left: .12em solid rgba(75, 75, 75, 0.4);
+  border-right: .12em solid rgba(75, 75, 75, 0.4);
+}
+.ddNav{
+  cursor: pointer;
+  font-family: open sans;
+  border-top: .12em solid rgba(100, 100,100, 0.2);
+  font-size: 1.2em;
+}
+.ddNav:hover{
+  color: #D8D8D8;
+  border-bottom:.2em solid white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  -webkit-transition: border .3s;
+}
+.bodyContainer{
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-family: oswald;
+  text-align: center;
+  top: 30vh;
+}
+.name{
+  font-weight: lighter;
+font-size: 5em;
+font-style: italic;
+text-decoration: underline;
+}
+cite{
+  font-family: comic;
+  font-weight: lighter;
+}
+
+
+@media(max-width:620px){
+  .navContainer{
+    display: none;
+  }
+  .smallNavContainer{
+    display: flex;
+  }
+}
+@media(min-width:621px){
+  .ddNav{
+    display: none;
+  }
+}
