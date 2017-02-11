@@ -2,9 +2,16 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
-  text-shadow: 1px 1px 1px #000;
+
 }
-body{
+a{
+  text-decoration: none;
+  color: white;
+}
+#bg{
+  text-shadow: 1px 1px 1px #000;
+  width: 100vw;
+  height: 100vh;
   background-color: rgb(110, 110, 110);
   background-image: url(https://static.pexels.com/photos/34676/pexels-photo.jpg);
   background-position: center;
@@ -113,5 +120,17 @@ cite{
 @media(min-width:621px){
   .ddNav{
     display: none;
+  }
+}
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3) {
+    .navContainer{
+      display: none;
+    }
+    .smallNavContainer{
+      display: flex;
+    }
   }
 }
