@@ -64,15 +64,21 @@ ul{
   /*border: 1px solid red;*/
 }
 .navDD{
-  width: 5em;
-  height: 1em;
   background: rgba(25, 25, 25, 0.9);
-  margin: auto; border-bottom-left-radius:.5em;
+  margin: auto;
+  border-bottom-left-radius:.5em;
   border-bottom-right-radius: .5em;
   border-bottom: .1em solid;
 }
 .fa-caret-down{
-  width: 100%;
+  width: 15vw;
+  font-size: 5vw;
+  color:white;
+  text-align: center;
+}
+.fa-caret-up{
+  width: 15vw;
+  font-size: 5vw;
   color:white;
   text-align: center;
 }
