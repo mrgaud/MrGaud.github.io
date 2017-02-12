@@ -129,6 +129,7 @@ cite{
     }
     .smallNavContainer{
       display: flex;
+      font-size: 3em;
     }
   }
 }

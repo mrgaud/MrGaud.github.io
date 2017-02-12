@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.bars').on('click', function(){
+  $('.smallNavContainer').on('click', function(){
     $('.ddNavContainer').slideToggle();
   })
 })
