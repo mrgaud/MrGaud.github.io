@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
-
 }
 a{
   text-decoration: none;
@@ -22,7 +21,7 @@ ul{
   list-style: none;
 }
 .navContainer{
-  background-color:rgba(75, 75, 75, 0.6);;
+  z-index: 1;
   position: fixed;
   width: 100%;
   display: flex;
@@ -30,6 +29,12 @@ ul{
   height: 2em;
   border-bottom-left-radius:.5em;
   border-bottom-right-radius:.5em;
+  background: rgba(255, 0, 0, 0.0);
+  -webkit-transition:background .5s;
+}
+.navContainer-scroll{
+  background:  rgba(25, 25, 25, 0.9);
+  -webkit-transition:background .5s;
 }
 .nav{
   font-size: 1.3em;
@@ -50,44 +55,55 @@ ul{
   -webkit-transition: border .3s;
 }
 .smallNavContainer{
-  font-size: 2em;
+  z-index: 1;
+  width: 100%;
   position: fixed;
-  top: .5em;
-  left: .5em;
-  color: white;
-  display: none;
+  display:none;
+  flex-direction: column;
+  justify-content: center;
+  /*border: 1px solid red;*/
 }
-.ddNavContainer{
-  display: none;
-  width: 70%;
-  left:15%;
+.navDD{
+  width: 5em;
+  height: 1em;
+  background: rgba(25, 25, 25, 0.9);
+  margin: auto; border-bottom-left-radius:.5em;
+  border-bottom-right-radius: .5em;
+  border-bottom: .1em solid;
+}
+.fa-caret-down{
+  width: 100%;
+  color:white;
+  text-align: center;
+}
+.ddNavs{
+  background-color: rgba(25, 25, 25, 0.9);
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius:.5em;
+  width: 100vw;
   margin: auto;
   text-align: center;
-  color: white;
-  position: fixed;
-  background-color:rgba(75, 75, 75, 0.4);
-  border-bottom-left-radius: .5em;
-  border-bottom-right-radius: .5em;
-  border-bottom: .12em solid rgba(75, 75, 75, 0.4);
-  border-left: .12em solid rgba(75, 75, 75, 0.4);
-  border-right: .12em solid rgba(75, 75, 75, 0.4);
+  display: none;
+  position: relative;
 }
+
 .ddNav{
-  cursor: pointer;
-  font-family: open sans;
-  border-top: .12em solid rgba(100, 100,100, 0.2);
-  font-size: 1.2em;
+  border-top: .1em solid #242F43];
+  width: 100vw;
+  font-size: 6vw;
+  padding: .3em;
+  border-bottom:0px solid white;
+  transition:border-bottom .2s;
 }
 .ddNav:hover{
-  color: #D8D8D8;
-  border-bottom:.2em solid white;
-  border-radius: 5px;
-  cursor: pointer;
+  border-bottom: .2em solid white;
+  border-bottom-left-radius: .5em;
+  border-bottom-right-radius: .5em;
 
-  -webkit-transition: border .3s;
+  transition: border-bottom .4s;
 }
 .bodyContainer{
-  position: absolute;
+  position: absolute;;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -99,37 +115,22 @@ ul{
 }
 .name{
   font-weight: lighter;
-font-size: 5em;
+font-size: 15vw;
 font-style: italic;
 text-decoration: underline;
+}
+.slogan{
+  font-size: 4vw;
 }
 cite{
   font-family: comic;
   font-weight: lighter;
 }
-
-
-@media(max-width:620px){
+@media (orientation:portrait){
   .navContainer{
     display: none;
   }
   .smallNavContainer{
     display: flex;
-  }
-}
-@media(min-width:621px){
-  .ddNav{
-    display: none;
-  }
-}
-@media screen
-  and (orientation: portrait){
-    .navContainer{
-      display: none;
-    }
-    .smallNavContainer{
-      display: flex;
-      font-size: 3em;
-    }
   }
 }

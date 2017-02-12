@@ -1,5 +1,13 @@
 $(document).ready(function(){
-  $('.smallNavContainer').on('click', function(){
-    $('.ddNavContainer').slideToggle();
+  $('.navDD').on('click',function(){
+    $('.ddNavs').slideToggle();
+  })
+  $(window).scroll(function(){
+    if($(window).scrollTop()>10){
+      $('.navContainer').addClass('navContainer-scroll')
+    }
+    else{
+      $('.navContainer').removeClass('navContainer-scroll')
+    }
   })
 })
