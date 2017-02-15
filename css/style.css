@@ -132,6 +132,36 @@ cite{
   font-family: comic;
   font-weight: lighter;
 }
+.contact{
+  font-family: open sans;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(50, 50, 50, 0.9));
+}
+.contact-button{
+  padding: .3em;
+  border-radius: .3em;
+  color: white;
+  /*background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(50, 50, 50, 0.9));*/
+  border: 0px solid #697175;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+.contact-info{
+  /*display: none;*/
+  flex-direction: column;
+  color: white;
+  justify-content: space-around;
+  background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(70, 70, 70, 0.8));
+}
+.contact-button:hover{
+background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(70, 70, 70, 0.8));
+}
+.info{
+  font-size: 1.5em;
+
+}
 @media (orientation:portrait){
   .navContainer{
     display: none;
@@ -139,4 +169,28 @@ cite{
   .smallNavContainer{
     display: flex;
   }
+  .contact{
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+  .contact-button{
+    border-top: .15em solid rgba(30,30,30,.5);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .contact-info{
+      display: flex;
+  }
+  .info{
+    border-top: .1em solid rgba(25, 25,25, 0.5);
+  }
+}
+@media (orientation:landscape){
+.contact{
+
+  flex-direction: row;
+}
 }
