@@ -135,17 +135,17 @@ cite{
 .contact{
   font-family: open sans;
   position: fixed;
-  bottom: 1em;
-  right: 1em;
-  background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(50, 50, 50, 0.9));
+  bottom: .5em;
+  right: .5em;
+  background-image: linear-gradient(rgba(25, 25, 25, 0.7), rgba(50, 50, 50, 0.7));
 }
 .contact-button{
-  padding: .3em;
+  padding: .2em;
   border-radius: .3em;
   color: white;
   /*background-image: linear-gradient(rgba(25, 25, 25, 0.9), rgba(50, 50, 50, 0.9));*/
   border: 0px solid #697175;
-  font-size: 1.2em;
+  font-size: 2vw;
   cursor: pointer;
 }
 .contact-info{
@@ -177,7 +177,8 @@ background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(70, 70, 70, 0.8));
     bottom: 0;
   }
   .contact-button{
-    border-top: .15em solid rgba(30,30,30,.5);
+    font-size: 3vw;
+    border-top: .15em solid rgba(30,30,30,.2);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
   }
