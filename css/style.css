@@ -163,6 +163,11 @@ background-image: linear-gradient(rgba(50, 50, 50, 0.8), rgba(70, 70, 70, 0.8));
 
 }
 @media (orientation:portrait){
+  @media handheld and (orientation:portrait){
+    *{
+      font-size: 10vw;
+    }
+  }
   .navContainer{
     display: none;
   }
