@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing-bg{
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../codingBackground.png);
+  background-color: rgb(100,100,100);
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-text{
+  display: inline-block;
+  top: 35vh;
+  color: white;
+  z-index:0;
+  position: fixed;
+  width: 100vw;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+
+}
+.landing-name{
+  font-family: Audiowide;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 10vw;
+
+  text-decoration: underline;
+}
+span{
+  display: inline-block;
+  height: 5px;
+  width: 20vw;
+  background-color: white;
+}
+.landing-quote{
+  font-family: open sans;
+  font-size: 4vw;
+}

@@ -1,17 +1,32 @@
-.aboutContainer{
-  background-color: #EEEEEE;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-}
 .about{
-  font-size: 1.2em;
-  font-family: oswald;
-  color:#728488;
-  padding: 1em;
-  padding-bottom: 2em;
-  text-indent: 2em;
-  width: 80%;
+  top: 100vh;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color:#E9EBEE;
+  z-index:1;
+  color: #697175;
+  overflow: scroll;;
+}
+.about-header{
+  margin-top:2em;
+  text-align: center;
+  font-size: 8vw;
+  font-family: audiowide;
+}
+.about-text{
   margin: auto;
-  background-color: #EEEEEE;
+  max-width: 30em;
+  font-family: open sans;
+  text-indent: 1em;
+  font-size: 1.5em;
+  padding: 1em;
+}
+.projects{
+  width: 100vw;
+  height: 100vh;
+  color: green;
+}
+.devMtn-link{
+  color: #5E89EF;
 }
