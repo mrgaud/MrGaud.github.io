@@ -10,6 +10,7 @@ ul{
   background-color: ;
 }
 .normal-nav{
+  cursor: pointer;
   color: white;
   font-family: open sans;
   font-size: 1.5em;
@@ -29,6 +30,7 @@ ul{
   background-color: white;
 }
 .normal-nav-scroll{
+  cursor: pointer;
   color: #697175;
   font-family: open sans;
   font-size: 1.5em;
