@@ -10,8 +10,9 @@
 }
 .about-header{
   margin-top:.5em;
+  margin-bottom: .2em;
   text-align: center;
-  font-size: 8vw;
+  font-size: 2em;
   font-family: audiowide;
 }
 
@@ -28,13 +29,22 @@
   text-decoration: none;
 }
 .text{
+  box-shadow: -.2em .1em 10px #000;
   max-width: 85%;
   margin: auto;
-  border: 1px solid #97A2A7;
+  border: 1px solid #ABB3B9;
   position: static;
-  height: 70vh;
+  max-height: 87%;
   overflow: scroll;
 }
 .aboutTarget{
-  opacity: 1;
+  opacity: .1;
+}
+.aboutlink{
+  bottom: 1em;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  z-index: 25;
 }
