@@ -1,0 +1,36 @@
+ul{
+  list-style: none;
+}
+.normal-navs{
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+  background-color: ;
+}
+.normal-nav{
+  color: white;
+  font-family: open sans;
+  font-size: 1.5em;
+  display: inline-block;
+}
+.highlighted{
+  border-bottom: 3px solid lightgreen;
+}
+
+.normal-navs-scroll{
+  box-shadow: .1em .1em 10px #000;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+  background-color: white;
+}
+.normal-nav-scroll{
+  color: #697175;
+  font-family: open sans;
+  font-size: 1.5em;
+  display: inline-block;
+}
