@@ -6,20 +6,15 @@
   background-color:#E9EBEE;
   z-index:1;
   color: #697175;
-  overflow: scroll;;
+  overflow: hidden;;
 }
 .about-header{
-  margin-top:2em;
+  margin-top:.5em;
   text-align: center;
   font-size: 8vw;
   font-family: audiowide;
 }
-.about-text-container{
-  width: 80%;
-  margin: auto;
-  border: 1px solid red;
-  overflow: scroll;
-}
+
 .about-text{
   margin: auto;
   max-width: 30em;
@@ -31,4 +26,15 @@
 .devMtn-link{
   color: #5E89EF;
   text-decoration: none;
+}
+.text{
+  max-width: 85%;
+  margin: auto;
+  border: 1px solid #97A2A7;
+  position: static;
+  height: 70vh;
+  overflow: scroll;
+}
+.aboutTarget{
+  opacity: 1;
 }
