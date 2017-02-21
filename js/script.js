@@ -10,7 +10,7 @@ $(document).ready(function() {
             $('.normal-navs-scroll').slideUp()
             $('.normal-navs').slideDown()
         }
-        if($('.text').isOnScreen(function(deltas){
+        if($('.aboutlink').isOnScreen(function(deltas){
   return deltas.top >= this.height() && deltas.bottom >= this.height();
 })){
           $('.normal-home').removeClass("highlighted")
@@ -22,7 +22,7 @@ $(document).ready(function() {
     })
     $(".normal-about").click(function() {
         $('html,body').animate({
-                scrollTop: $(".aboutlink").offset().top
+                scrollTop: $(".about").offset().top-20
             },
             'slow');
     });
@@ -32,4 +32,10 @@ $(document).ready(function() {
             },
             'slow');
     });
+
+
+
+
+
+
 })

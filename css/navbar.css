@@ -17,7 +17,7 @@ ul{
   display: inline-block;
 }
 .highlighted{
-  border-bottom: 3px solid lightgreen;
+  border-bottom: 3px solid #990100;
 }
 
 .normal-navs-scroll{
