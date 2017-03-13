@@ -7,8 +7,15 @@ const gulp = require('gulp'),
     // relBabel = require('babel')
 
 const paths = {
-    scripts:['./js/*.js']
+    scripts:['./js/*.js'],
+    css:['./css/*css']
 }
+gulp.task('minifyCss', function(){
+    return gulp.src(paths.css)
+    .pipe(concat('build.css'))
+    .pipe(minifyCss())
+    .pipe(gulp.dest('./'))
+})
 
 gulp.task('build', function() {
     return gulp.src(paths.scripts)
